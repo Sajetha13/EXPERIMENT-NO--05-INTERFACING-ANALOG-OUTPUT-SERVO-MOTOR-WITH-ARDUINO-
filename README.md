@@ -1,8 +1,8 @@
-###  DATE: 
+###  DATE: 22/3/2023
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME: S.Sajetha
+###  ROLL NO : 212223100049
+###  DEPARTMENT: CSE(Cyber Security)
 
 
 # EXPERIMENT NO 05 INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
@@ -28,7 +28,6 @@ Servo motors are used for angular positioning, such as in radio control airplane
 
 
 ![image](https://user-images.githubusercontent.com/36288975/163544439-1f477927-fcd4-42f0-9ce4-c863fdbf1210.png)
-
 
 
 #### Figure-01 SERVO MOTOR SPLIT VIEW 
@@ -61,6 +60,15 @@ CIRCUIT DIAGRAM
 
 ### FIGURE 04 CIRCUIT DIAGRAM
 
+![image](https://github.com/Sajetha13/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/138849316/c92db62a-a418-455f-abfd-bdd3ccad9465)
+#### Circuit
+![image](https://github.com/Sajetha13/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/138849316/482e28b2-8623-4089-90ff-25af310af986)
+
+#### Schematic Diagram
+![image](https://github.com/Sajetha13/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/138849316/2021260f-827d-4f57-97db-1f8549c82963)
+
+#### Graph
+
 ### PROCEDURE:
 1.	Connect the circuit as per the circuit diagram 
 2.	Connect the board to your computer via the USB cable.
@@ -74,14 +82,53 @@ CIRCUIT DIAGRAM
 
 
 ### PROGRAM :
- 
+```
+#include<Servo.h>
+Servo sr1;
+int pos=0;
+int red=9;
+int green=8;
 
+void setup()
+{
+  sr1.attach(6);
+  Serial.begin(9600);
+  pinMode(red, OUTPUT);
+  pinMode(green, OUTPUT);
+}
 
-
-
-
-
-
+void loop()
+{
+  for(pos=0; pos<=180; pos+=5)
+  {
+    sr1.write(pos);
+    	delay(200);
+    Serial.println(pos);
+    
+  if(pos>=120)
+  {
+    digitalWrite(red, HIGH);
+      delay (200);
+    digitalWrite(red, LOW);
+      delay (200);
+  }
+  } 
+  
+   for(pos=180; pos>=0; pos-=5)
+   {
+      sr1.write(pos);
+  		delay(200);
+      Serial.println(pos);
+      if(pos<120)
+      {
+         digitalWrite(green, HIGH);
+         delay (200);
+         digitalWrite(green, LOW);
+         delay (200);
+      }
+   }
+}
+``` 
 
 
 ### RESULTS: 
