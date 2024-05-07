@@ -1,11 +1,10 @@
-###  DATE: 22/3/2023
-
-###  NAME: S.Sajetha
-###  ROLL NO : 212223100049
-###  DEPARTMENT: CSE(Cyber Security)
-
-
 # EXPERIMENT NO 05 INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
+
+##  DATE: 22/3/2023
+##  NAME: S.Sajetha
+##  ROLL NO : 212223100049
+##  DEPARTMENT: CSE(Cyber Security)
+
 
 ### AIM
 To interface an Analog output (servo motor) and modify the angular displacement of the servo using PWM signal .
