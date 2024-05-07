@@ -6,7 +6,7 @@
 ##  DEPARTMENT: CSE(Cyber Security)
 
 
-### AIM
+## AIM
 To interface an Analog output (servo motor) and modify the angular displacement of the servo using PWM signal .
 COMPONENTS REQUIRED:
 1.	Servo motor of choice (9v is preferred )
@@ -17,7 +17,7 @@ COMPONENTS REQUIRED:
 6.	Servo rated power supply (dc source )
 
 
-### THEORY
+## THEORY
 Servo motors and are constructed out of basic DC motors, by adding:
 •	 gear reduction
 •	 a position sensor for the motor shaft
@@ -52,22 +52,22 @@ An external controller (such as the Arduino) tells the servo where to go with a 
 
 
 
-### CIRCUIT DIAGRAM
+## CIRCUIT DIAGRAM
  
  #### FIGURE 04 CIRCUIT DIAGRAM
  ![image](https://user-images.githubusercontent.com/36288975/163544618-6eb8a7b5-7f1a-428a-8d9f-fd899b145efb.png)
 
 
-#### Circuit
+### Circuit
 ![image](https://github.com/Sajetha13/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/138849316/c92db62a-a418-455f-abfd-bdd3ccad9465)
-#### Schematic Diagram
+### Schematic Diagram
 ![image](https://github.com/Sajetha13/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/138849316/482e28b2-8623-4089-90ff-25af310af986)
 
-#### Graph
+### Graph
 ![image](https://github.com/Sajetha13/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/138849316/2021260f-827d-4f57-97db-1f8549c82963)
 
 
-### PROCEDURE:
+## PROCEDURE:
 1.	Connect the circuit as per the circuit diagram 
 2.	Connect the board to your computer via the USB cable.
 3.	If needed, install the drivers.
@@ -79,7 +79,7 @@ An external controller (such as the Arduino) tells the servo where to go with a 
 9.	Ensure safety before powering up the device.
 
 
-### PROGRAM :
+## PROGRAM :
 ```
 #include<Servo.h>
 Servo sr1;
@@ -129,5 +129,5 @@ void loop()
 ``` 
 
 
-### RESULTS: 
+## RESULTS: 
 Arduino uno interfacing with servo motor is learned and angular position is controlled .
